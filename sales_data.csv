@@ -1,0 +1,14 @@
+Date,Category,Location,ProductID,UnitsSold,UnitPrice,Revenue
+2023-01-01,Electronics,North,P1,10,120.0,1200.0
+2023-01-05,Clothing,South,P2,25,30.0,750.0
+2023-02-10,Home Goods,East,P3,5,75.0,375.0
+2023-03-15,Electronics,North,P1,15,120.0,1800.0
+2023-04-20,Clothing,West,P4,30,25.0,750.0
+2023-05-25,Electronics,South,P5,8,200.0,1600.0
+2023-06-30,Home Goods,East,P3,12,75.0,900.0
+2023-07-05,Clothing,North,P2,20,30.0,600.0
+2023-08-10,Electronics,West,P1,18,120.0,2160.0
+2023-09-15,Home Goods,South,P6,6,50.0,300.0
+2023-10-20,Electronics,East,P5,10,200.0,2000.0
+2023-11-25,Clothing,North,P4,40,25.0,1000.0
+2023-12-30,Electronics,West,P1,22,120.0,2640.0
