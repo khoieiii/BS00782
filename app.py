@@ -15,15 +15,15 @@ st.set_page_config(page_title="Phân tích và Dự đoán Doanh số Bán hàng
 st.title("Phân tích và Dự đoán Doanh số Bán hàng")
 st.markdown("Một ứng dụng Streamlit để phân tích dữ liệu bán hàng và dự đoán doanh thu.")
 st.header("1. Tải và Chuẩn bị Dữ liệu")
-st.markdown("Đọc file `sales_data.csv` và hiển thị 5 dòng đầu tiên.")
+st.markdown("Đọc file `abc_sales_data_with_more_duplicates.csv` và hiển thị 5 dòng đầu tiên.")
 
 try:
-    df = pd.read_csv('sales_data.csv')
+    df = pd.read_csv('abc_sales_data_with_more_duplicates.csv')
     df['Date'] = pd.to_datetime(df['Date'])
     df['Month'] = df['Date'].dt.month
     st.dataframe(df.head())
 except FileNotFoundError:
-    st.error("Lỗi: Không tìm thấy file `sales_data.csv`. Vui lòng đảm bảo file này nằm trong cùng thư mục với `app.py`.")
+    st.error("Lỗi: Không tìm thấy file `abc_sales_data_with_more_duplicates.csv`. Vui lòng đảm bảo file này nằm trong cùng thư mục với `app.py`.")
     st.stop()
 st.header("2. Phân tích Dữ liệu với Biểu đồ")
 st.markdown("Sử dụng Matplotlib và Seaborn để trực quan hóa dữ liệu.")
