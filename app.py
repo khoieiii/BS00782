@@ -17,10 +17,10 @@ st.markdown("Một ứng dụng Streamlit để phân tích dữ liệu bán hà
 
 # --- 1. Tải và chuẩn bị dữ liệu ---
 st.header("1. Tải và Chuẩn bị Dữ liệu")
-st.markdown("Đọc file `sales_data.csv` và hiển thị 5 dòng đầu tiên.")
+st.markdown("Đọc file `data.csv`.")
 
 try:
-    df = pd.read_csv('sales_data.csv')
+    df = pd.read_csv('data.csv')
     df['Date'] = pd.to_datetime(df['Date'])
     df['Month'] = df['Date'].dt.month
     st.dataframe(df.head())
